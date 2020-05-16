@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contacto</title>
+    <style>
+      * {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        text-align: center;
+        align-items: center;
+        background-color: rgb(245, 245, 245);
+        color: rgb(47, 21, 49);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- MENU-->
+    <nav>
+      <a href="../index.html" style="text-decoration: none;">INICIO</a>
+      <a href="contacto.html" 
+        >CONTACTO</a
+      >
+    </nav>
+    <!-- /MENU-->
+
+    <!-- CUERPO DE LA PAGINA-->
+    <main>
+        <!--Seccion Encabezado-->
+        <section style="margin-top: 20px;">
+            <!--imagen-->
+            <iframe src="https://giphy.com/embed/2JBiHzC2PWL0A" width="480" height="338" frameBorder="0" class="giphy-embed"
+                allowFullScreen></iframe>
+            <!--/imagen-->
+            <p style="font-size: 12px;"><a href="https://giphy.com/gifs/matthiasbrown-matthias-brown-traceloops-pulp-fiction-2JBiHzC2PWL0A">via GIPHY</a></p>
+            <!--titulo-->
+            <h1>¿Que te ha parecido la <b>Umadventure?<b></h1>
+            <p>Dejanos tus datos y opiniones para mejorar</p>
+            <p>Tambien puedes visitarnos en <a href="https://www.instagram.com/patricia_ocando/?hl=es" target="_blank">Instagram</a> o enviarnos un <a href="mailto:hola@patriciaocando.com?Subject=hola%20como%20estas" target="_blank">email</a></p>
+        </section>
+       
+      <!--Seccion formulario de contacto-->
+      <section>
+        <form style="width: 60%; align-items: center; margin: auto;">
+            <!--Datos personales-->
+          <fieldset>
+            <legend>Datos</legend>
+            <label for="name">Nombre</label>
+            <input name="name" type="text" />
+
+            <label for="email">Email</label>
+            <input name="email" type="email" />
+            <!--/Datos personales-->
+            <br />
+            <br />
+            <!--Elegir pelicula favorita-->
+            <label for="opinion">
+              Cual es tu pelicula favorita de Uma:
+            </label>           
+            <select id="opinion">
+                <!--Grupo Uno-->
+                <optgroup label="Me encanta">
+                    <option value="movie1">
+                    Kill Bill Vol 1
+                    </option>
+                    <option value="movie2">
+                    Kill Bill Vol 2
+                    </option>
+                    <option value="movie3">
+                    Pulp Fiction
+                    </option>
+                    <option value="movie4">
+                        Batman
+                    </option>
+                </optgroup>
+                <!--/Grupo Uno-->
+                <!--Grupo Dos-->
+                <optgroup label="No me gusta Uma">
+                    <option value="movie5">
+                    Ninguna en lo absoluto
+                    </option>
+                </optgroup>
+                <!--/Grupo Dos-->
+            </select>
+            <!--/Elegir pelicula favorita-->
+          </fieldset>
+          <br />
+          <!--textarea-->
+          <label for="message">Escribe aqui tu mensaje</label>
+          <br />
+          <textarea id="menssage" rows="5" cols="100"></textarea>
+          <button>
+              Enviar
+          </button>
+        </form>
+      </section>
+    </main>
+    <!-- /UERPO DE LA PAGINA-->
+
+    <!--FOOTER-->
+    <footer>
+      <hr />
+      <p style="font-size: 10px; text-transform: uppercase;">
+        Creado por
+        <a href="https://www.linkedin.com/in/patricia-ocando/"
+          >Patricia Ocando,</a
+        >Copyright 2020-2021
+      </p>
+    </footer>
+    <!--/FOOTER-->
+  </body>
+</html>
