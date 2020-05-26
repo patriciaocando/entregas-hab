@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --font: "Open Sans", sans-serif;
+  --colorDark: #222222;
+  --colorMain: #f5ab57;
+  --colorbutton: #a3a3a3;
+  --colorLight: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font);
+}
+
+/*Estilo Boton header y formulario*/
+.button {
+  text-decoration: none;
+  color: var(--colorLight);
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--colorDark);
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+body > header,
+body > main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/*fondo del header*/
+body > header {
+  background-image: url("/img/fondoHeader.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 20rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+body > header h1 {
+  color: var(--colorLight);
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+body > header nav {
+  flex-grow: 1;
+}
+
+/*flex de los elementos del header*/
+body > header nav ul {
+  display: flex;
+}
+
+/*Estilo titulo header*/
+body > header nav ul li {
+  font-size: 1rem;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+body > header nav ul li a {
+  color: var(--colorDark);
+  text-decoration: none;
+}
+
+/*Estilo main*/
+
+body > main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+body > main section {
+  background-color: var(--colorMain);
+  padding: 1rem;
+}
+
+body > main section h1 {
+  color: var(--colorLight);
+  font-size: 2rem;
+  padding: 1rem 0 0 1rem;
+}
+
+body > main .textContent p {
+  color: var(--colorDark);
+  font-size: 1rem;
+  padding: 1rem 0 1rem 0;
+}
+
+/*Estilo cards*/
+
+body > main section#cards {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+body > main section #cards ul li {
+  background-color: var(--colorDark);
+  margin-bottom: 2rem;
+}
+
+body > main section #cards ul li article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background-color: var(--colorDark);
+}
+
+body > main section#cards ul li article figure img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+body > main section#cards ul li article .textCard {
+  color: var(--colorLight);
+  background-color: var(--colorDark);
+}
+
+body > main section#cards ul li article .textCard h2 {
+  color: var(--colorLight);
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+body > main section#cards ul li article .textCard p {
+  color: var(--colorLight);
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+body > main section#cards ul li article .button {
+  color: var(--colorDark);
+  background-color: var(--colorbutton);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+/*Estilo formularios*/
+
+body > main section#form {
+  background-color: var(--colorLight);
+  margin-bottom: 5rem;
+}
+
+body > main section#form h1 {
+  color: var(--colorMain);
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+body > main section#form form fieldset {
+  border: none;
+  display: block;
+}
+
+body > main section#form form fieldset label {
+  display: block;
+  font-weight: 700;
+}
+
+body > main section#form form fieldset input,
+body > main section#form form fieldset textarea,
+body > main section#form form fieldset select {
+  width: 100%;
+  background-color: var(--colorMain);
+  border: 2px solid var(--colorDark);
+  padding: 0.25rem;
+}
+
+body > main section#form form fieldset textarea {
+  min-height: 5rem;
+}
+
+body > main section#form form fieldset.width label {
+  display: inline;
+}
+
+body > main section#form form fieldset.width input {
+  width: auto;
+}
+
+/*estilos de boton enviar*/
+body > main section#form form button.button {
+  border: none;
+}
+
+@media (min-width: 700px) {
+  html {
+    font-size: 16px;
+  }
+
+  body > header {
+    min-height: 45vh;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  body > header nav {
+    flex-grow: 0;
+    order: -1;
+  }
+
+  body > main section.textContent p {
+    columns: 2;
+    font-size: 1rem;
+  }
+
+  body > main section#cards ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  body > main #cards ul li {
+    max-width: calc(33.33% - 0.5rem);
+  }
+
+  body > main section#form form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body > main section#form form input,
+  body > main section#form form textarea,
+  body > main section#form form select {
+    padding: 0.5rem;
+  }
+
+  body > main section#form form fieldset {
+    width: 50%;
+    padding: 0.5rem;
+  }
+
+  body > main section#form form fieldset.width {
+    width: 100%;
+  }
+}
