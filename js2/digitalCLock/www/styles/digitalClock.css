@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "clock";
+  src: url("/fonts/DS-Digital-BoldItalic.woff2");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: clock;
+  display: grid;
+  place-content: center;
+}
+
+body > h1#time {
+  font-family: clock;
+  font-size: 5rem;
+}
+
+body > p.saludo {
+  margin: 0.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.buenasNoches {
+  background-color: #221169;
+  color: #ffffff;
+}
+
+.buenosDias {
+  background-color: #f3dd13;
+  color: #1a0900;
+}
+
+.buenasTardes {
+  background-color: #4d86c0;
+  color: #ffffff;
+}
+
+.alarm {
+  background-color: #d80c5a;
+  color: #ffffff;
+}
+
+@media (min-width: 700px) {
+  body > h1#time {
+    font-size: 10rem;
+  }
+}
