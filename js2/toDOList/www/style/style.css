@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --font: Montserrat, sans-serif;
+  --colorLight: white;
+  --colorDark: black;
+  --colorAccent: gold;
+  --colorDanger: #b50056;
+  --colorGrey: grey;
+  --colorBlue: rgb(0, 162, 255);
+}
+
+body {
+  font-family: var(--font);
+  color: var(--colorDark);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+header {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header h1 {
+  font-weight: 900;
+}
+
+body > form#new-todo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+
+  grid-template-areas:
+    "input input input add"
+    "clean clean delete delete";
+}
+
+body > form#new-todo button {
+  font-size: 14px;
+  font-family: (--font);
+  border: 0;
+  color: var(--colorLight);
+  padding: 0.35rem;
+  background-color: var(--colorAccent);
+  border-radius: 3px;
+}
+
+body > form#new-todo fieldset {
+  border: 0;
+  grid-area: input;
+}
+
+body > form#new-todo fieldset input {
+  width: 100%;
+  padding: 0.25rem;
+  font-family: var(--font);
+}
+
+body > form#new-todo button.add {
+  font-family: var(--font);
+  grid-area: add;
+  align-self: end;
+  background-color: var(--colorBlue);
+}
+
+body > form#new-todo button.clean {
+  font-family: var(--font);
+  grid-area: clean;
+}
+
+form#new-todo button.delete {
+  font-family: var(--font);
+  grid-area: delete;
+  background-color: var(--colorDanger);
+}
+
+form#new-todo label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+ul#todos {
+  list-style: none;
+  border-top: 1px solid var(--colorGrey);
+  padding-top: 1rem;
+}
+
+ul#todos li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+ul#todos li input {
+  margin-right: 0.5rem;
+  margin-top: 2px;
+}
+
+ul#todos li.done p {
+  text-decoration: line-through;
+  color: var(--colorGrey);
+}
