@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --font: Roboto, sans-serif;
+  --colorDark: #222222;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--colorDark);
+  background-image: url("/media/cabecera-islas-cies-galicia-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body > header h1 {
+  color: white;
+  font-size: rem;
+}
+
+body > table {
+  font-size: 1.5rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body > table tr td {
+  padding: 1rem 1rem 1rem 0;
+}
+body > table thead th:first-child {
+  text-align: left;
+}
+
+body > table caption {
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 1rem 0;
+}
+
+.green {
+  color: white;
+  background-color: rgb(22, 150, 22);
+  padding: 1rem;
+}
+
+.red {
+  color: white;
+  background-color: rgb(192, 1, 1);
+  padding: 1rem;
+}
+
+.orange {
+  padding: 1rem;
+  background-color: rgb(253, 161, 23);
+}
+
+.animation {
+  transform: scale(2);
+  transition: ease-in;
+}
