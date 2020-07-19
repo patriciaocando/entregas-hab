@@ -1,12 +1,22 @@
 <template>
+  <!--DIV RAIZ-->
   <div class="about">
+    <!--DIV METATITLE PARA SEO-->
     <div>
       <vue-headful title="Hackamusic\About" description="Pagina de descripcion del proyecto" />
     </div>
-    <h1>⭐ HACKAMUSIC ⭐</h1>
-    <h3>Acerca este proyecto</h3>
-    <projectinfo :tools="tools" />
+    <!--FIN DIV METATITLE PARA SEO-->
+
+    <!--DIV CONTENEDOR DONDE SE VA A MOSTRAR EL CONTENIDO DEL COMPONENTE-->
+    <div>
+      <h1>⭐ HACKAMUSIC ⭐</h1>
+      <h3>Acerca este proyecto</h3>
+      <!--etiqueta html del componente-->
+      <projectinfo :tools="tools" />
+    </div>
+    <!--FIN DIV CONTENEDOR-->
   </div>
+  <!--FIN DIV RAIZ-->
 </template>
 
 <script>
@@ -17,9 +27,11 @@ import vueHeadful from "vue-headful";
 
 export default {
   name: "About",
+  //Registro la etiqueta del componente
   components: {
     projectinfo
   },
+  //Declaro las variables que voy a usar y el contenido especifico
   data() {
     return {
       tools: [

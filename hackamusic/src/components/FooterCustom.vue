@@ -1,17 +1,20 @@
 <template>
+  <!--DIV RAIZ DEL FOOTER-->
   <div>
-    <div class="foot">
+    <footer class="foot">
       <p>
         Music is life 🎶 By
         <a href="https://patriciaocando.com/">Patricia Ocando</a>
       </p>
-    </div>
+    </footer>
   </div>
+  <!--FIN DIV RAIZ-->
 </template>
 
 <script>
+//declaro el nombre del componente
 export default {
-  name: "footercustom",
+  name: "footercustom"
 };
 </script>
 
